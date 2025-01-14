@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url("assets/background.png");
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main-container {
+            margin: 3em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .left-bar {
+            max-width: 20vw;
+        }
+
+        .left-bar-title {
+            text-align: center;
+            background-color: #00000055;
+            backdrop-filter: blur(10px);
+            border-radius: 1em;
+            margin: 1em;
+        }
+
+        .left-bar-title h1 {
+            font-size: 3em;
+            color: #ffffffcc;
+        }
+
+        .left-bar-title {
+            padding: 1em;
+        }
+
+        .left-bar-avatar {
+            text-align: center;
+            background-color: #00000055;
+            backdrop-filter: blur(10px);
+            border-radius: 1em;
+            margin: 1em;
+        }
+
+        .avatar {
+            padding: 1em;
+            width: 15%;
+            height: 15%;
+            border-radius: 100%;
+        }
+
+        .right-bar {
+            /* max-width: 50vw; */
+        }
+
+        .self-introduction {
+            background-color: #00000055;
+            backdrop-filter: blur(10px);
+            border-radius: 1em;
+            margin: 1em;
+            padding: 1em;
+            color: #ffffffcc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <span class="left-bar">
+            <div class="left-bar-title">
+                <h1>Qrasa</h1>
+            </div>
+            <div class="left-bar-avatar">
+                <img class="avatar" src="assets/avatar.webp"></img>
+                <p class="subtitle"></p>
+            </div>
+            <div class="personal-links">
+                <span class="personal-links-row">
+                </span>
+            </div>
+        </span>
+        <span class="right-bar">
+            <div class="self-introduction">
+                <p>你好！👋我叫Qrasa，一只普普通通的初三学生，同时也是福瑞控。🐾✨</p>
+                <p>设定是一只狐，更多的故事咱暂时还没想好呢🤔</p>
+                <p><i class="fa-solid fa-check"></i> Chinese <i class="fa-solid fa-check"></i> English <i
+                        class="fa-solid fa-xmark"></i> Other Language</p>
+            </div>
+            <div class="pic" draggable:="false">
+                <img class="dm" height="250vh" src="sl1.webp" alt="" draggable:="false">
+
+                </div>
+        </span>
+        <span class="projects">
+            <div>
+            </div>
+        </span>
+    </div>
+</body>
