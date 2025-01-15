@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
 <head>
+    <title>Qrasa Homepage</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             background-image: url("assets/background.png");
-            width: 100%;
-            height: 100vh;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            color: #ffffffcc;
         }
 
         .main-container {
@@ -22,7 +22,8 @@
         }
 
         .left-bar {
-            max-width: 20vw;
+            width: 20em;
+            height: calc(100vh - 6em);
         }
 
         .left-bar-title {
@@ -31,15 +32,12 @@
             backdrop-filter: blur(10px);
             border-radius: 1em;
             margin: 1em;
+            padding: 1em;
         }
 
         .left-bar-title h1 {
             font-size: 3em;
             color: #ffffffcc;
-        }
-
-        .left-bar-title {
-            padding: 1em;
         }
 
         .left-bar-avatar {
@@ -51,14 +49,21 @@
         }
 
         .avatar {
+            margin: 1em 1em 0;
             padding: 1em;
-            width: 15%;
-            height: 15%;
+            width: 10em;
+            height: 10em;
             border-radius: 100%;
         }
 
+        .subtitle {
+            margin-top: 0;
+            padding: 1em;
+            text-align: center;
+        }
+
         .right-bar {
-            /* max-width: 50vw; */
+             width: 100%;
         }
 
         .self-introduction {
@@ -69,39 +74,48 @@
             padding: 1em;
             color: #ffffffcc;
         }
+
+        .self-introduction p {
+        margin: 1em 1em;
+        }
+
+        .pic img {
+            margin: 1em;
+            border-radius: 1em;
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <span class="left-bar">
+        <div class="left-bar">
             <div class="left-bar-title">
                 <h1>Qrasa</h1>
             </div>
             <div class="left-bar-avatar">
-                <img class="avatar" src="assets/avatar.webp"></img>
-                <p class="subtitle"></p>
+                <img class="avatar" src="assets/avatar.webp" alt="">
+                <h4 class="subtitle"><i class="fa-solid fa-location-dot"></i> Shanghai,China</h4>
             </div>
             <div class="personal-links">
                 <span class="personal-links-row">
                 </span>
             </div>
-        </span>
-        <span class="right-bar">
+        </div>
+        <div class="right-bar">
             <div class="self-introduction">
                 <p>你好！👋我叫Qrasa，一只普普通通的初三学生，同时也是福瑞控。🐾✨</p>
                 <p>设定是一只狐，更多的故事咱暂时还没想好呢🤔</p>
                 <p><i class="fa-solid fa-check"></i> Chinese <i class="fa-solid fa-check"></i> English <i
                         class="fa-solid fa-xmark"></i> Other Language</p>
-            </div>
-            <div class="pic" draggable:="false">
-                <img class="dm" height="250vh" src="sl1.webp" alt="" draggable:="false">
-
+                <div class="pic">
+                    <img class="dm" height="250vh" src="https://qrasa.cn/sl1.webp" alt="">
                 </div>
-        </span>
-        <span class="projects">
+            </div>
+
+        </div>
+        <div class="projects">
             <div>
             </div>
-        </span>
+        </div>
     </div>
 </body>
