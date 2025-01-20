@@ -1,152 +1,23 @@
 <!DOCTYPE html>
-
+<html lang="zh-CN">
 <head>
     <title>Qrasa Homepage</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            background-image: url("assets/background.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffffcc;
-        }
-
-        .main-container {
-            margin: 3em;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-        }
-
-        .left-bar {
-            width: 20em;
-            height: calc(100vh - 6em);
-        }
-
-        .left-bar-title {
-            text-align: center;
-            background-color: #00000055;
-            backdrop-filter: blur(10px);
-            border-radius: 1em;
-            margin: 1em;
-            padding: 1em;
-        }
-
-        .left-bar-title h1 {
-            font-size: 2em;
-            color: #ffffffcc;
-        }
-
-        .left-bar-avatar {
-            text-align: center;
-            background-color: #00000055;
-            backdrop-filter: blur(10px);
-            border-radius: 1em;
-            margin: 1em;
-        }
-
-        .avatar {
-            margin: 1em 1em 0;
-            padding: 1em;
-            width: 10em;
-            height: 10em;
-            border-radius: 100%;
-        }
-
-        .subtitle {
-            margin: 0;
-            padding: 1em 1em 0;
-            text-align: center;
-        }
-
-        .left-bar-avatar p {
-            font-size: x-small;
-            padding: 1em;
-            margin: 1em;
-        }
-
-        .personal-links{
-            text-align: center;
-            background-color: #00000055;
-            backdrop-filter: blur(10px);
-            border-radius: 1em;
-            margin: 1em;
-
-        }
-
-        .personal-links ul{
-            list-style-type: none;
-            margin: 0.5em;
-            padding: 1em;
-        }
-
-        .personal-links ul a {
-            padding: 1em;
-            font-size: small;
-        }
-
-        .footer {
-            text-align: center;
-            background-color: #00000055;
-            backdrop-filter: blur(10px);
-            border-radius: 1em;
-            margin: 1em;
-            padding: 1em;
-        }
-
-        .footer h4 {
-            margin: 0.5em;
-        }
-
-        .footer p {
-            font-size: xx-small;
-        }
-
-        .right-bar {
-             width: 100%;
-        }
-
-        .self-introduction {
-            background-color: #00000055;
-            backdrop-filter: blur(10px);
-            border-radius: 1em;
-            margin: 1em;
-            padding: 1em;
-            color: #ffffffcc;
-        }
-
-        .self-introduction p,.self-introduction h4 {
-        margin: 1em 1em;
-        }
-
-        .pic img {
-            margin: 1em;
-            border-radius: 1em;
-        }
-
-        a:link,a:visited,a:hover,a:active {
-            color: #ffffffcc;
-            text-decoration: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="main-container">
         <div class="left-bar">
-            <div class="left-bar-title">
+            <div class="left-bar-title card">
                 <h1>Qrasa</h1>
             </div>
-            <div class="left-bar-avatar">
+            <div class="left-bar-avatar card">
                 <img class="avatar" src="assets/avatar.webp" alt="">
                 <h4 class="subtitle"><i class="fa-solid fa-location-dot"></i> Shanghai,China</h4>
                 <p class="subtitle">大概是一只快乐的furry（控）吧</p>
             </div>
-            <div class="personal-links">
+            <div class="personal-links card">
                 <ul class="personal-links-row">
                     <li>
                         <a href="https://blog.qrasa.cn/"><i class="fa-solid fa-blog"></i> 博客</a>
@@ -159,14 +30,14 @@
                     <li></li>
                 </ul>
             </div>
-            <div class="footer">
+            <div class="footer card">
                 <h4><i class="fa-brands fa-github"></i> XHomepage</h4>
                 <p><a href="https://github.com/Qrasa510/XHomepage"><strong>Qrasa510/XHomepage</strong> <i class="fa-solid fa-up-right-from-square"></i></a></p>
             </div>
         </div>
         <div class="right-bar">
-            <div class="self-introduction">
-                <h4>关于我</h4>
+            <div class="self-introduction card">
+                <h4>💡 关于我</h4>
                 <p>你好！👋我叫Qrasa，一只普普通通的初三学生，同时也是福瑞控。🐾✨</p>
                 <p>设定是一只狐，更多的故事咱暂时还没想好呢🤔</p>
                 <h4>👀 我喜欢这些</h4>
@@ -184,15 +55,56 @@
                     </ul>
                 <p><i class="fa-solid fa-check"></i> Chinese <i class="fa-solid fa-check"></i> English <i
                         class="fa-solid fa-xmark"></i> Other Language</p>
-                <div class="pic">
-                    <img class="dm" height="200vh" src="https://qrasa.cn/sl1.webp" alt="">
-                </div>
-            </div>
 
+            </div>
+        </div>
+        <div class="pic">
+            <div class="card">
+                <img height="200vh" src="https://qrasa.cn/sl1.webp" alt="">
+            </div>
         </div>
         <div class="projects">
-            <div>
+            <div class="card title">
+                <h3><i class="fa-brands fa-github"></i> My Projects</h3>
+            </div>
+            <div class="card github">
+                <a href="https://github.com/Qrasa510/XHomepage" class="repo-link">
+                    <h3>Xhomepage</h3>
+                    <p>一个普普通通的个人主页</p>
+                    <p class="stars"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>获取Stars中...</p>
+                    <p><i class="fa-solid fa-circle fa-sm" style="color: #e34c26;"></i> HTML</p>
+                </a>
             </div>
         </div>
     </div>
+    <script>
+        async function fetchStars(repoUrl) {
+            const response = await fetch(`https://api.github.com/repos/${repoUrl}`);
+            if (!response.ok) {
+                console.error('Error fetching data:', response.statusText);
+                return null; // 返回 null 以表示获取失败
+            }
+            const data = await response.json();
+            return data.stargazers_count || 0; // 如果没有这个属性，返回 0
+        }
+
+        async function updateStars() {
+            const projects = document.querySelectorAll('.github');
+
+            for (const project of projects) {
+                const link = project.querySelector('a.repo-link');
+                const repoUrl = link.href.split('github.com/')[1]; // 获取用户/仓库格式
+                const stars = await fetchStars(repoUrl);
+
+                const starsParagraph = project.querySelector('.stars');
+                if (stars !== null) {
+                    starsParagraph.textContent = `⭐ ${stars}`;
+                } else {
+                    starsParagraph.textContent = '⭐ 获取失败'; // 显示获取失败的提示
+                }
+            }
+        }
+        updateStars();
+    </script>
 </body>
+</html>
