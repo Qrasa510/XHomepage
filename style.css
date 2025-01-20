@@ -1,0 +1,141 @@
+body {
+    background-image: url("assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffffcc;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: rgba(217, 217, 217, 0.47) solid 2px;
+    text-align: center;
+    background-color: #00000055;
+    backdrop-filter: blur(10px);
+    border-radius: 1em;
+}
+
+.main-container {
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.left-bar {
+    width: 20em;
+    height: calc(100vh - 6em);
+}
+
+.left-bar-title {
+
+    margin: 1em;
+    padding: 1em;
+}
+
+.left-bar-title h1 {
+    font-size: 2em;
+    color: #ffffffcc;
+}
+
+.left-bar-avatar {
+    margin: 1em;
+}
+
+.avatar {
+    margin: 1em 1em 0;
+    padding: 1em;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 1em 1em 0;
+    text-align: center;
+}
+
+.left-bar-avatar p {
+    font-size: x-small;
+    padding: 1em;
+    margin: 1em;
+}
+
+.personal-links{
+    margin: 1em;
+}
+
+.personal-links ul{
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.personal-links ul a {
+    padding: 1em;
+    font-size: small;
+}
+
+.footer {
+
+    margin: 1em;
+    padding: 1em;
+}
+
+.footer h4 {
+    margin: 0.5em;
+}
+
+.footer p {
+    font-size: xx-small;
+}
+
+.right-bar {
+    width: 100%;
+}
+
+.self-introduction {
+    text-align: left;
+    margin: 1em;
+    padding: 1em;
+}
+
+.self-introduction p,.self-introduction h4 {
+    margin: 1em 1em;
+}
+
+.pic{
+    padding: 1em;
+}
+
+.pic img {
+    margin: 1em;
+    border-radius: 0.6em;
+}
+
+.projects {
+    width: 25em;
+}
+
+.projects h3,.projects p {
+    text-align: left;
+
+}
+
+.projects p {
+    font-size: small;
+}
+
+.projects .title {
+    padding: 0.125em 0.125em 0.125em 1em;
+}
+
+.projects div {
+    margin: 1em;
+    padding: 1em;
+}
+a:link,a:visited,a:hover,a:active {
+    color: #ffffffcc;
+    text-decoration: none;
+}
